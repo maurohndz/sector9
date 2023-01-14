@@ -1,0 +1,26 @@
+@import '../../../styles/colors.scss';
+
+.list {
+	display: flex;
+	flex-flow: column;
+	gap: 17px;
+	margin-top: 17px;
+	list-style: none;
+}
+
+.item {
+	text-decoration: none;
+	cursor: pointer;
+	height: 96px;
+	padding: 0 16px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-products;
+}
+
+.image {
+    max-width: 100px;
+    width: 100%;
+}

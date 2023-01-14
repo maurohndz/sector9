@@ -1,0 +1,29 @@
+@import '../../../styles/colors.scss';
+
+.item {
+    list-style: none;
+
+    & .link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &.list {
+        .link {
+            background-color: $background-products;
+            height: 96px;
+            padding: 0 16px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row-reverse;
+            align-items: center;
+        }
+    }
+
+    /*&.grid {
+        
+    }*/
+}

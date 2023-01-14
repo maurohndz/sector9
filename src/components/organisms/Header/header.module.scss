@@ -1,0 +1,17 @@
+.header {
+    min-height: 64px;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 80px;
+    }
+}

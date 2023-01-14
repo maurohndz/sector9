@@ -1,0 +1,44 @@
+@import "../../../styles/colors.scss";
+
+.heading {
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	color: $text;
+	margin: 0;
+
+	&.primary {
+		margin-bottom: 16px;
+	}
+
+	&.secondary {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.4rem;
+		letter-spacing: 0.35px;
+		mix-blend-mode: normal;
+		opacity: 0.8;
+		margin-bottom: 8px;
+	}
+
+	&.tertiary {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 22px;
+		letter-spacing: 0.35px;
+		opacity: 0.5;
+	}
+
+    &.h-yellow {
+        color: $primary;
+    }
+
+	&.item_list {
+		font-weight: 500;
+		opacity: 0.8;
+		margin: 0;
+	}
+}

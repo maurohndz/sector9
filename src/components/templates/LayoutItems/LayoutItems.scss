@@ -1,0 +1,15 @@
+.lItems {
+    gap: 17px;
+    margin-top: 17px;
+    list-style: none;
+    
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-list {
+        display: flex;
+        flex-flow: column;
+    }
+}

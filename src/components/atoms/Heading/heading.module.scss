@@ -1,0 +1,21 @@
+@import "../../../styles/colors.scss";
+
+.heading {
+	font-style: normal;
+	text-transform: uppercase;
+	color: $text;
+	margin: 0;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	letter-spacing: 0.2px;
+
+	&-primary {
+		margin-bottom: 16px;
+		font-weight: 700;
+	}
+
+	&-secondary {
+		font-weight: 500;
+		opacity: 0.8;
+	}
+}

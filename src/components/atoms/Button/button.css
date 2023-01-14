@@ -1,0 +1,27 @@
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.175px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.button-primary {
+  background: var(--primary-one);
+  color: var(--primary-two);
+}
+.button-danger {
+  background: var(--danger);
+}
+.button-outline {
+  background: transparent;
+  color: var(--primary-one);
+  border: 1px solid var(--primary-one);
+}
