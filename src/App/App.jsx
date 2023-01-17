@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react'
-import { RouterProvider } from 'react-router-dom'
+import React, { useEffect } from "react";
+import { RouterProvider } from "react-router-dom";
 
 // Pages
-import router from '../routes/router'
+import Routes from "../routes";
 
 //
-import '../styles/global.scss'
+import "../styles/global.scss";
 
 const App = () => {
-  return (
-    <>
-      <RouterProvider router={router}/ >
-    </>
-  )
-}
+	return (
+		<>
+			<Routes />
+		</>
+	);
+};
 
-export default App
+export default App;
