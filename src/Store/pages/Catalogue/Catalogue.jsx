@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-import Heading from "../../../atoms/Heading";
-import Paragraph from "../../../atoms/Paragraph";
+import Heading from "../../components/atoms/Heading";
+import Paragraph from "../../components/atoms/Paragraph";
+import ListItems from "../../components/molecules/ListItems";
 
 const Catalogue = () => {
 	const [data, setData] = useState({

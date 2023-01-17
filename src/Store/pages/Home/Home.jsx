@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Components
-import Heading from '../../../atoms/Heading'
-import Paragraph from "../../../atoms/Paragraph";
-import ListItems from '../../../molecules/ListItems'
+import Heading from "../../components/atoms/Heading";
+import Paragraph from "../../components/atoms/Paragraph";
+import ListItems from "../../components/molecules/ListItems";
 
 // Data fake
 import fake from "./fake";
@@ -17,10 +17,13 @@ const Home = () => {
 				cada una de sus partes y pasea por la vida en tu sector 9.
 			</Paragraph>
 
-			<ListItems data={fake} link={{ 
-				base: '/',
-				key: 'name'
-			 }} />
+			<ListItems
+				data={fake}
+				link={{
+					base: "/",
+					key: "name",
+				}}
+			/>
 		</section>
 	);
 };

@@ -4,7 +4,7 @@ import React from 'react'
 import Image from '../../atoms/Image'
 
 // Assets
-import assets from '../../../store/app-assets'
+import assets from '../../../firebase/app-assets'
 
 // Styles
 import styles from './header.module.scss'

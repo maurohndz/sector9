@@ -1,0 +1,7 @@
+@import './colors.scss';
+
+.app {
+    min-height: 100vh;
+    background-color: $background-app;
+    color: $text;
+}
