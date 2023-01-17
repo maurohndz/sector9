@@ -1,14 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-/*
-
 module.exports = {
 	entry: "./src/index.js",
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "bundle.js",
+		filename: "assets/js/bundle.js",
 		publicPath: "/",
+		assetModuleFilename: "images/[name]",
 	},
 	devServer: {
 		historyApiFallback: true,
@@ -27,18 +26,11 @@ module.exports = {
 			},
 			{
 				test: /\.(s*)css$/,
-				use: [
-					{ loader: MiniCssExtractPlugin.loader },
-					"css-loader",
-					"sass-loader",
-				],
+				use: ["style-loader", "css-loader", "sass-loader"],
 			},
 			{
-				test: /\.(png|svg|jpg|gif)$/,
-				loader: "url-loader",
-				options: {
-					name: "assets/img/[name].[ext]",
-				},
+				test: /\.(png|jpg|gif)$/i,
+				type: "asset/resource",
 			},
 		],
 	},
@@ -47,9 +39,5 @@ module.exports = {
 			template: "./public/index.html",
 			filename: "index.html",
 		}),
-		new MiniCssExtractPlugin({
-			filename: "assets/css/[name].css",
-		}),
 	],
 };
-*/
