@@ -17,7 +17,10 @@ const Home = () => {
 				cada una de sus partes y pasea por la vida en tu sector 9.
 			</Paragraph>
 
-			<ListItems data={fake} />
+			<ListItems data={fake} link={{ 
+				base: '/',
+				key: 'name'
+			 }} />
 		</section>
 	);
 };

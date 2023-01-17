@@ -1,1 +1,1 @@
-export { defualt } from './Categories'
+export { default } from './Categories'
